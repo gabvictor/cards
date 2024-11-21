@@ -2,7 +2,7 @@ const form = document.getElementById('dataForm');
 const statusMessage = document.getElementById('statusMessage');
 
 // Configurações do repositório GitHub
-const GITHUB_TOKEN = "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"; // Substitua pelo seu token pessoal
+const GITHUB_TOKEN = process.env.Token; // "Token" é o nome que você deu ao seu segredo no GitHub
 const GITHUB_OWNER = "gabvictor";   // Substitua pelo seu nome de usuário ou organização
 const GITHUB_REPO = "desktop-tutorial"; // Substitua pelo nome do repositório
 const GITHUB_FILE_PATH = "dados/formulario.json"; // Caminho do arquivo onde os dados serão armazenados
