@@ -1,69 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Cards</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-        }
-        .container {
-            width: 300px;
-            text-align: center;
-            border: 2px solid #333;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            width: 150px; /* Aumentado para 150px */
-            margin: 0 auto 20px;
-        }
-        h1 {
-            font-size: 1.2em;
-            color: #333;
-            margin: 10px 0 20px;
-        }
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .button {
-            padding: 10px;
-            border: 2px solid #333;
-            border-radius: 5px;
-            background-color: #f7f7f7;
-            color: #333;
-            font-size: 1em;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .button:hover {
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <title>Coleta de Dados</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <img src="./img/WhatsApp_Image_2024-11-11_at_3.32.00_PM-removebg-preview.png" alt="Art Cards" class="logo">
-        <h1>Nossa loja física: Galeria Cunha, centro. Rio Branco - Acre</h1>
-        <p>Como podemos ajudar?</p>
-        <div class="buttons">
-            <a href="#" class="button">Encomendar</a>
-            <a href="#" class="button">Pacotes Promocionais</a>
-            <a href="#" class="button">Fale conosco</a>
-        </div>
-    </div>
+    <h1>Formulário de Coleta de Dados</h1>
+    <form id="dataForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="statusMessage"></p>
+    <script src="script.js"></script>
+    
 </body>
 </html>
